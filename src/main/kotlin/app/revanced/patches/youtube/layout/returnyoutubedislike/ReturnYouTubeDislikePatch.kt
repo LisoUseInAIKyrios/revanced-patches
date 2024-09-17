@@ -10,6 +10,7 @@ import app.revanced.patcher.patch.PatchException
 import app.revanced.patcher.patch.annotation.CompatiblePackage
 import app.revanced.patcher.patch.annotation.Patch
 import app.revanced.patches.all.misc.resources.AddResourcesPatch
+import app.revanced.patches.music.misc.integrations.IntegrationsPatch
 import app.revanced.patches.shared.misc.settings.preference.IntentPreference
 import app.revanced.patches.youtube.layout.returnyoutubedislike.fingerprints.ConversionContextFingerprint
 import app.revanced.patches.youtube.layout.returnyoutubedislike.fingerprints.DislikeFingerprint
@@ -47,6 +48,8 @@ import com.android.tools.smali.dexlib2.iface.reference.TypeReference
     name = "Return YouTube Dislike",
     description = "Adds an option to show the dislike count of videos using the Return YouTube Dislike API.",
     dependencies = [
+        IntegrationsPatch::class,
+        AddResourcesPatch::class,
         SettingsPatch::class,
         LithoFilterPatch::class,
         VideoIdPatch::class,
