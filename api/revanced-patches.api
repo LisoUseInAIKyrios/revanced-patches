@@ -305,10 +305,6 @@ public final class app/revanced/patches/googlephotos/features/SpoofFeaturesPatch
 	public synthetic fun execute (Lapp/revanced/patcher/data/Context;)V
 }
 
-public final class app/revanced/patches/googlephotos/features/fingerprints/InitializeFeaturesEnumFingerprint : app/revanced/patcher/fingerprint/MethodFingerprint {
-	public static final field INSTANCE Lapp/revanced/patches/googlephotos/features/fingerprints/InitializeFeaturesEnumFingerprint;
-}
-
 public final class app/revanced/patches/googlephotos/misc/gms/GmsCoreSupportPatch : app/revanced/patches/shared/misc/gms/BaseGmsCoreSupportPatch {
 	public static final field INSTANCE Lapp/revanced/patches/googlephotos/misc/gms/GmsCoreSupportPatch;
 }
@@ -577,14 +573,6 @@ public final class app/revanced/patches/myfitnesspal/ads/HideAdsPatch : app/reva
 	public synthetic fun execute (Lapp/revanced/patcher/data/Context;)V
 }
 
-public final class app/revanced/patches/myfitnesspal/ads/fingerprints/IsPremiumUseCaseImplFingerprint : app/revanced/patcher/fingerprint/MethodFingerprint {
-	public static final field INSTANCE Lapp/revanced/patches/myfitnesspal/ads/fingerprints/IsPremiumUseCaseImplFingerprint;
-}
-
-public final class app/revanced/patches/myfitnesspal/ads/fingerprints/MainActivityNavigateToNativePremiumUpsellFingerprint : app/revanced/patcher/fingerprint/MethodFingerprint {
-	public static final field INSTANCE Lapp/revanced/patches/myfitnesspal/ads/fingerprints/MainActivityNavigateToNativePremiumUpsellFingerprint;
-}
-
 public final class app/revanced/patches/netguard/broadcasts/removerestriction/RemoveBroadcastsRestrictionPatch : app/revanced/patcher/patch/ResourcePatch {
 	public static final field INSTANCE Lapp/revanced/patches/netguard/broadcasts/removerestriction/RemoveBroadcastsRestrictionPatch;
 	public synthetic fun execute (Lapp/revanced/patcher/data/Context;)V
@@ -655,10 +643,6 @@ public final class app/revanced/patches/rar/misc/annoyances/purchasereminder/Hid
 	public static final field INSTANCE Lapp/revanced/patches/rar/misc/annoyances/purchasereminder/HidePurchaseReminderPatch;
 	public fun execute (Lapp/revanced/patcher/data/BytecodeContext;)V
 	public synthetic fun execute (Lapp/revanced/patcher/data/Context;)V
-}
-
-public final class app/revanced/patches/rar/misc/annoyances/purchasereminder/fingerprints/ShowReminderFingerprint : app/revanced/patcher/fingerprint/MethodFingerprint {
-	public static final field INSTANCE Lapp/revanced/patches/rar/misc/annoyances/purchasereminder/fingerprints/ShowReminderFingerprint;
 }
 
 public final class app/revanced/patches/reddit/ad/banner/HideBannerPatch : app/revanced/patcher/patch/ResourcePatch {
@@ -767,10 +751,6 @@ public final class app/revanced/patches/reddit/customclients/joeyforreddit/api/S
 	public static final field INSTANCE Lapp/revanced/patches/reddit/customclients/joeyforreddit/api/SpoofClientPatch;
 	public fun patchClientId (Ljava/util/Set;Lapp/revanced/patcher/data/BytecodeContext;)V
 	public fun patchUserAgent (Ljava/util/Set;Lapp/revanced/patcher/data/BytecodeContext;)V
-}
-
-public final class app/revanced/patches/reddit/customclients/joeyforreddit/api/fingerprints/AuthUtilityUserAgent : app/revanced/patcher/fingerprint/MethodFingerprint {
-	public static final field INSTANCE Lapp/revanced/patches/reddit/customclients/joeyforreddit/api/fingerprints/AuthUtilityUserAgent;
 }
 
 public final class app/revanced/patches/reddit/customclients/joeyforreddit/detection/piracy/DisablePiracyDetectionPatch : app/revanced/patcher/patch/BytecodePatch {
@@ -1820,18 +1800,10 @@ public final class app/revanced/patches/youtube/layout/startpage/ChangeStartPage
 	public synthetic fun execute (Lapp/revanced/patcher/data/Context;)V
 }
 
-public final class app/revanced/patches/youtube/layout/startpage/fingerprints/StartActivityFingerprint : app/revanced/patcher/fingerprint/MethodFingerprint {
-	public static final field INSTANCE Lapp/revanced/patches/youtube/layout/startpage/fingerprints/StartActivityFingerprint;
-}
-
 public final class app/revanced/patches/youtube/layout/startupshortsreset/DisableResumingShortsOnStartupPatch : app/revanced/patcher/patch/BytecodePatch {
 	public static final field INSTANCE Lapp/revanced/patches/youtube/layout/startupshortsreset/DisableResumingShortsOnStartupPatch;
 	public fun execute (Lapp/revanced/patcher/data/BytecodeContext;)V
 	public synthetic fun execute (Lapp/revanced/patcher/data/Context;)V
-}
-
-public final class app/revanced/patches/youtube/layout/startupshortsreset/fingerprints/UserWasInShortsFingerprint : app/revanced/patcher/fingerprint/MethodFingerprint {
-	public static final field INSTANCE Lapp/revanced/patches/youtube/layout/startupshortsreset/fingerprints/UserWasInShortsFingerprint;
 }
 
 public final class app/revanced/patches/youtube/layout/tablet/EnableTabletLayoutPatch : app/revanced/patcher/patch/BytecodePatch {
