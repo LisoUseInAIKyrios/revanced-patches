@@ -77,6 +77,7 @@ abstract class BaseIntegrationsPatch(
      * [MethodFingerprint] for integrations.
      *
      * @param contextRegisterResolver A [IRegisterResolver] to get the register.
+     * @param isOptional If true, then if this fingerprint fails to resolve it will be ignored.
      * @see MethodFingerprint
      */
     abstract class IntegrationsFingerprint(
@@ -86,6 +87,7 @@ abstract class BaseIntegrationsPatch(
         opcodes: Iterable<Opcode?>? = null,
         strings: Iterable<String>? = null,
         customFingerprint: ((methodDef: Method, classDef: ClassDef) -> Boolean)? = null,
+        private val isOptional: Boolean = false,
         private val insertIndexResolver: ((Method) -> Int) = object : IHookInsertIndexResolver {},
         private val contextRegisterResolver: (Method) -> String = object : IRegisterResolver {},
     ) : MethodFingerprint(
@@ -98,6 +100,8 @@ abstract class BaseIntegrationsPatch(
     ) {
 
         fun invoke(integrationsDescriptor: String) {
+            if (result == null && isOptional) return
+
             result?.mutableMethod?.let { method ->
                 val insertIndex = insertIndexResolver(method)
                 val contextRegister = contextRegisterResolver(method)
