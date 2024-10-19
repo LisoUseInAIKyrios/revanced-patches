@@ -134,6 +134,9 @@ This is because Crowdin requires temporarily flattening this file and removing t
   <string name="revanced_hide_channel_guidelines_title">Skryť pokyny pre kanál</string>
   <string name="revanced_hide_channel_guidelines_summary_on">Pokyny kanála sú skryté</string>
   <string name="revanced_hide_channel_guidelines_summary_off">Zobrazia sa vodítka kanálov</string>
+  <string name="revanced_hide_chips_shelf_title">Skryť poličku na žetóny</string>
+  <string name="revanced_hide_chips_shelf_summary_on">Polica na žetóny je skrytá</string>
+  <string name="revanced_hide_chips_shelf_summary_off">Je zobrazená polica na hranolky</string>
   <string name="revanced_hide_expandable_chip_title">Skryť rozšíriteľný čip pod videami</string>
   <string name="revanced_hide_expandable_chip_summary_on">Rozšíriteľné čipy sú skryté</string>
   <string name="revanced_hide_expandable_chip_summary_off">Zobrazujú sa rozšíriteľné čipy</string>
@@ -194,9 +197,6 @@ This is because Crowdin requires temporarily flattening this file and removing t
   <string name="revanced_hide_artist_cards_title">Skryť karty umelcov</string>
   <string name="revanced_hide_artist_cards_summary_on">Karty umelcov sú skryté</string>
   <string name="revanced_hide_artist_cards_summary_off">Zobrazia sa karty umelcov</string>
-  <string name="revanced_hide_chips_shelf_title">Skryť poličku na žetóny</string>
-  <string name="revanced_hide_chips_shelf_summary_on">Polica na žetóny je skrytá</string>
-  <string name="revanced_hide_chips_shelf_summary_off">Je zobrazená polica na hranolky</string>
   <string name="revanced_hide_attributes_section_title">Skryť sekciu atribútov</string>
   <string name="revanced_hide_attributes_section_summary_on">Sekcie \"Odporúčané miesta\", Hry a Hudba sú skryté</string>
   <string name="revanced_hide_attributes_section_summary_off">Zobrazia sa sekcie \"Odporúčané miesta\", Hry a Hudba</string>
@@ -601,9 +601,6 @@ This is because Crowdin requires temporarily flattening this file and removing t
   <string name="revanced_hide_shorts_location_label_title">Skryť štítok polohy</string>
   <string name="revanced_hide_shorts_location_label_summary_on">Štítok miesta je skrytý</string>
   <string name="revanced_hide_shorts_location_label_summary_off">Zobrazí sa štítok s umiestnením</string>
-  <string name="revanced_hide_shorts_save_sound_button_title">Tlačidlo Skryť uloženie zvuku do zoznamu skladieb</string>
-  <string name="revanced_hide_shorts_save_sound_button_summary_on">Uloženie zvuku do zoznamu skladieb je skryté</string>
-  <string name="revanced_hide_shorts_save_sound_button_summary_off">Zobrazí sa Uložiť zvuk do zoznamu skladieb</string>
   <string name="revanced_hide_shorts_search_suggestions_title">Skryť návrhy vyhľadávania</string>
   <string name="revanced_hide_shorts_search_suggestions_summary_on">Návrhy vyhľadávania sú skryté</string>
   <string name="revanced_hide_shorts_search_suggestions_summary_off">Zobrazia sa návrhy vyhľadávania</string>
@@ -1094,19 +1091,8 @@ This is because Crowdin requires temporarily flattening this file and removing t
   <string name="revanced_slide_to_seek_summary_on">Slide to search je zapnuté</string>
   <string name="revanced_slide_to_seek_summary_off">Nie je povolené posúvanie</string>
   </patch>
-  <patch id="misc.fix.playback.SpoofClientPatch">
-  <string name="revanced_spoof_client_screen_title">Spoof klienta</string>
-  <string name="revanced_spoof_client_screen_summary">Spoof klienta, aby sa predišlo problémom s prehrávaním</string>
-  <string name="revanced_spoof_client_title">Spoof klienta</string>
-  <string name="revanced_spoof_client_summary_on">Klient je sfalšovaný</string>
-  <string name="revanced_spoof_client_summary_off">Klient nie je sfalšovaný\n\nPrehrávanie videa nemusí fungovať</string>
-  <string name="revanced_spoof_client_user_dialog_message">Vypnutie tohto nastavenia môže spôsobiť problémy s prehrávaním videa.</string>
-  <string name="revanced_spoof_client_about_android_vr_summary">• Žiadne HDR video\n• Videá pre deti sa neprehrávajú\n• Pozastavené videá sa môžu náhodne obnoviť\n• Miniatúry vyhľadávacieho panela Shorts v nízkej kvalite\n• Tlačidlo akcie Stiahnuť je vždy skryté\n• Karty záverečnej obrazovky sú vždy skryté</string>
-  <string name="revanced_spoof_client_storyboard_timeout">Sfalšované miniatúry klientov nie sú k dispozícii (vypršal časový limit rozhrania API)</string>
-  <string name="revanced_spoof_client_storyboard_io_exception">Sfalšované klientske miniatúry sú dočasne nedostupné: %s</string>
-  </patch>
-  <!-- This patch is no longer used, these strings are not in use, and these strings will be deleted in the future. -->
-  <patch id="misc.fix.playback.SpoofSignaturePatch">
+  <patch id="misc.fix.playback.SpoofVideoStreamsPatch">
+  <string name="revanced_spoof_video_streams_user_dialog_message">Vypnutie tohto nastavenia môže spôsobiť problémy s prehrávaním videa.</string>
   </patch>
   <!-- This patch is no longer used and these strings will soon be deleted. -->
   <patch id="video.hdrbrightness.HDRBrightnessPatch">

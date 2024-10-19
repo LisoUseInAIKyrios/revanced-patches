@@ -147,6 +147,9 @@ This is because Crowdin requires temporarily flattening this file and removing t
   <string name="revanced_hide_channel_guidelines_title">Kanal təlimatlarını gizlət</string>
   <string name="revanced_hide_channel_guidelines_summary_on">Kanal təlimatları gizlidir</string>
   <string name="revanced_hide_channel_guidelines_summary_off">Kanal təlimatları göstərilir</string>
+  <string name="revanced_hide_chips_shelf_title">Çip bölməsin gizlət</string>
+  <string name="revanced_hide_chips_shelf_summary_on">Çip bölməsi gizlidir</string>
+  <string name="revanced_hide_chips_shelf_summary_off">Çip bölməsi göstərilir</string>
   <string name="revanced_hide_expandable_chip_title">Videoların altında genişlənən çipi gizlət</string>
   <string name="revanced_hide_expandable_chip_summary_on">Genişlənən çiplər gizlidir</string>
   <string name="revanced_hide_expandable_chip_summary_off">Genişlənən çiplər göstərilir</string>
@@ -207,9 +210,6 @@ This is because Crowdin requires temporarily flattening this file and removing t
   <string name="revanced_hide_artist_cards_title">Sənətçi kartlarını gizlət</string>
   <string name="revanced_hide_artist_cards_summary_on">Sənətçi kartları gizlidir</string>
   <string name="revanced_hide_artist_cards_summary_off">Sənətçi kartları göstərilir</string>
-  <string name="revanced_hide_chips_shelf_title">Çip bölməsin gizlət</string>
-  <string name="revanced_hide_chips_shelf_summary_on">Çip bölməsi gizlidir</string>
-  <string name="revanced_hide_chips_shelf_summary_off">Çip bölməsi göstərilir</string>
   <string name="revanced_hide_attributes_section_title">Atributlar bölməsini gizlət</string>
   <string name="revanced_hide_attributes_section_summary_on">\"Seçilən məkanlar\", Oyunlar və Musiqi bölmələri gizlidir</string>
   <string name="revanced_hide_attributes_section_summary_off">\"Seçilən məkanlar\", Oyunlar və Musiqi bölmələri göstərilir</string>
@@ -627,15 +627,15 @@ This is because Crowdin requires temporarily flattening this file and removing t
   <string name="revanced_hide_shorts_location_label_title">Məkan etiketini gizlət</string>
   <string name="revanced_hide_shorts_location_label_summary_on">Məkan etiketi gizlidir</string>
   <string name="revanced_hide_shorts_location_label_summary_off">Məkan etiketi göstərilir</string>
-  <string name="revanced_hide_shorts_save_sound_button_title">Səsi pleylistdə saxlama düyməsini gizlət</string>
-  <string name="revanced_hide_shorts_save_sound_button_summary_on">Səsi pleylistdə saxlama gizlidir</string>
-  <string name="revanced_hide_shorts_save_sound_button_summary_off">Səsi pleylistdə saxlama göstərilir</string>
-  <string name="revanced_hide_shorts_use_this_sound_button_title">\"Bu səsi istifadə et\" düyməsini gizlət</string>
-  <string name="revanced_hide_shorts_use_this_sound_button_summary_on">\"Bu səsi istifadə et\" düyməsi gizlidir</string>
-  <string name="revanced_hide_shorts_use_this_sound_button_summary_off">\"Bu səsi istifadə et\" düyməsi göstərilir</string>
+  <string name="revanced_hide_shorts_save_sound_button_title">\"Musiqini saxla\" düyməsini gizlət</string>
+  <string name="revanced_hide_shorts_save_sound_button_summary_on">\"Musiqini saxla\" gizlidir</string>
+  <string name="revanced_hide_shorts_save_sound_button_summary_off">\"Musiqini saxla\" göstərilir</string>
   <string name="revanced_hide_shorts_search_suggestions_title">Axtarış təkliflərini gizlət</string>
   <string name="revanced_hide_shorts_search_suggestions_summary_on">Axtarış təklifləri gizlədilib</string>
   <string name="revanced_hide_shorts_search_suggestions_summary_off">Axtarış təklifləri göstərilir</string>
+  <string name="revanced_hide_shorts_stickers_title">Stikerləri gizlət</string>
+  <string name="revanced_hide_shorts_stickers_summary_on">Stikerlər gizlidir</string>
+  <string name="revanced_hide_shorts_stickers_summary_off">Stikerlər göstərilir</string>
   <string name="revanced_hide_shorts_like_button_title">\"Bəyən\" düyməsini gizlət</string>
   <string name="revanced_hide_shorts_like_button_summary_on">Bəyənmə düyməsi gizlidir</string>
   <string name="revanced_hide_shorts_like_button_summary_off">Bəyənmə düyməsi göstərilir</string>
@@ -1132,27 +1132,23 @@ This is because Crowdin requires temporarily flattening this file and removing t
   <string name="revanced_slide_to_seek_summary_on">Axtarmaq üçün sürüşdürmə aktivdir</string>
   <string name="revanced_slide_to_seek_summary_off">Axtarmaq üçün sürüşdürmə aktiv deyil</string>
   </patch>
-  <patch id="misc.fix.playback.SpoofClientPatch">
-  <string name="revanced_spoof_client_screen_title">Qəbuledicini saxtalaşdır</string>
-  <string name="revanced_spoof_client_screen_summary">Oynatma problemlərinin olmaması üçün client-i saxtalaşdır</string>
-  <string name="revanced_spoof_client_title">Qəbuledicini saxtalaşdır</string>
-  <string name="revanced_spoof_client_summary_on">Qəbuledici saxtalaşdırıldı</string>
-  <string name="revanced_spoof_client_summary_off">Qəbuledici dəyişməyib\n\nVideo oynatma işləməyə bilər</string>
-  <string name="revanced_spoof_client_user_dialog_message">Bu seçimin bağlanması, video oynatma problemlərinə səbəb ola bilər.</string>
-  <string name="revanced_spoof_client_type_title">Qəbuledici saxtalaşdırma növü</string>
-  <string name="revanced_spoof_client_ios_force_avc_title">iOS AVC-yə Zorla (H.264)</string>
-  <string name="revanced_spoof_client_ios_force_avc_summary_on">iOS video kodlayıcı AVC-dir</string>
-  <string name="revanced_spoof_client_ios_force_avc_summary_off">iOS video kodlayıcı AVC, VP9 və ya AV1-dir</string>
-  <string name="revanced_spoof_client_ios_force_avc_user_dialog_message">Bunu aktivləşdirmə batareya ömrünü yaxşılaşdıra və oynatma donmasını düzəldə bilər.\n\nAVC maksimum 1080p görüntü imkanına malikdir və video oynadılması VP9 və ya AV1-dən daha çox internet məlumatından istifadə edəcək.</string>
-  <string name="revanced_spoof_client_about_android_ios_title">iOS saxtakarlığının yan təsirləri</string>
-  <string name="revanced_spoof_client_about_android_ios_summary">• HDR yalnız AV1 kodlayıcı ilə dəstəklənir\n• Baxış tarixçəsi ödəyici hesab ilə işləmir</string>
-  <string name="revanced_spoof_client_about_android_vr_title">Android VR saxtakarlığı yan təsirləri</string>
-  <string name="revanced_spoof_client_about_android_vr_summary">• HDR video yoxdur• Uşaq videoları oynadılmır\n• Fasilə verilmiş videolar gözlənilmədən davam edə bilər\n• Aşağı keyfiyyətli Shorts axtarma çubuğu miniatürləri\n• \"Yüklə\" fəaliyyət düyməsi gizlidir\n• Bitiş ekran kartları gizlidir</string>
-  <string name="revanced_spoof_client_storyboard_timeout">Client kiçik şəkillərini təqlid etmə əlçatmazdır (API vaxtı bitdi)</string>
-  <string name="revanced_spoof_client_storyboard_io_exception">Client kiçik şəkillərini təqlid etmə müvəqqəti əlçatmazdır: %s</string>
-  </patch>
-  <!-- This patch is no longer used, these strings are not in use, and these strings will be deleted in the future. -->
-  <patch id="misc.fix.playback.SpoofSignaturePatch">
+  <patch id="misc.fix.playback.SpoofVideoStreamsPatch">
+  <string name="revanced_spoof_video_streams_screen_title">Video yayımları saxtalaşdır</string>
+  <string name="revanced_spoof_video_streams_screen_summary">Oynatma problemlərin önləmək üçün qəbuledici video yayımların saxtalaşdır</string>
+  <string name="revanced_spoof_video_streams_title">Video yayımları saxtalaşdır</string>
+  <string name="revanced_spoof_video_streams_summary_on">Video yayımları saxtalaşdırılır</string>
+  <string name="revanced_spoof_video_streams_summary_off">Video yayımları saxtalaşmır\n\nVideo oynatma işləməyə bilər</string>
+  <string name="revanced_spoof_video_streams_user_dialog_message">Bu seçimi bağlamaq, video oynatma problemlərinə səbəb olar.</string>
+  <string name="revanced_spoof_video_streams_client_title">İlkin qəbuledici</string>
+  <string name="revanced_spoof_video_streams_ios_force_avc_title">Məcburi AVC (H.264)</string>
+  <string name="revanced_spoof_video_streams_ios_force_avc_summary_on">Video kodlaşdırma: AVC (H.264)</string>
+  <string name="revanced_spoof_video_streams_ios_force_avc_summary_off">Video kodlaşdırma / VP9 və ya AV1</string>
+  <string name="revanced_spoof_video_streams_ios_force_avc_no_hardware_vp9_summary_on">Cihazınızın VP9 hardware decoding\'i yoxdur və bu seçim, \"Qəbuledicini saxtalaşdırma\" aktivləşdikdə həmişəlikdir</string>
+  <string name="revanced_spoof_video_streams_ios_force_avc_user_dialog_message">Bunu aktivləşdirmə batareya ömrünü yaxşılaşdıra və oynatma donmasını düzəldə bilər.\n\nAVC maksimum 1080p görüntü imkanına malikdir və video oynadılması VP9 və ya AV1-dən daha çox internet məlumatı istifadə edəcək.</string>
+  <string name="revanced_spoof_video_streams_about_ios_title">iOS saxtakarlığı yan təsirləri</string>
+  <string name="revanced_spoof_video_streams_about_ios_summary">• Filmlər və ya ödənişli videolar oynadılmaya bilər\n• Canlı yayımlar əvvəldən başlayır\n• Videolar 1 saniyə tez bitə bilər\n• Opus səs kodlama yoxdur</string>
+  <string name="revanced_spoof_video_streams_about_android_vr_title">Android VR saxtakarlığı yan təsirləri</string>
+  <string name="revanced_spoof_video_streams_about_android_vr_summary">• Səs axını menyusu əskikdir\n• Stabil səs səviyyəsi əlçatan deyil</string>
   </patch>
   <!-- This patch is no longer used and these strings will soon be deleted. -->
   <patch id="video.hdrbrightness.HDRBrightnessPatch">

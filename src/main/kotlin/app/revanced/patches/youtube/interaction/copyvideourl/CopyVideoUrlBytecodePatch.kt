@@ -19,24 +19,11 @@ import app.revanced.patches.youtube.video.information.VideoInformationPatch
         CompatiblePackage(
             "com.google.android.youtube",
             [
-                "18.48.39",
+                "18.38.44",
                 "18.49.37",
-                "19.01.34",
-                "19.02.39",
-                "19.03.36",
-                "19.04.38",
-                "19.05.36",
-                "19.06.39",
-                "19.07.40",
-                "19.08.36",
-                "19.09.38",
-                "19.10.39",
-                "19.11.43",
-                "19.12.41",
-                "19.13.37",
-                "19.14.43",
-                "19.15.36",
                 "19.16.39",
+                "19.25.37",
+                "19.34.42",
             ],
         ),
     ],
@@ -51,8 +38,8 @@ object CopyVideoUrlBytecodePatch : BytecodePatch(emptySet()) {
 
     override fun execute(context: BytecodeContext) {
         BUTTONS_DESCRIPTORS.forEach { descriptor ->
-            PlayerControlsBytecodePatch.initializeControl("$descriptor->initializeButton(Landroid/view/View;)V")
-            PlayerControlsBytecodePatch.injectVisibilityCheckCall("$descriptor->changeVisibility(Z)V")
+            PlayerControlsBytecodePatch.initializeBottomControl(descriptor)
+            PlayerControlsBytecodePatch.injectVisibilityCheckCall(descriptor)
         }
     }
 }

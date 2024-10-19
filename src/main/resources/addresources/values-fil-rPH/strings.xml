@@ -134,6 +134,9 @@ This is because Crowdin requires temporarily flattening this file and removing t
   <string name="revanced_hide_channel_guidelines_title">Itago ang mga alituntunin ng channel</string>
   <string name="revanced_hide_channel_guidelines_summary_on">Nakatago ang mga alituntunin ng channel</string>
   <string name="revanced_hide_channel_guidelines_summary_off">Ipinapakita ang mga alituntunin sa channel</string>
+  <string name="revanced_hide_chips_shelf_title">Itago ang shelf ng chips</string>
+  <string name="revanced_hide_chips_shelf_summary_on">Nakatago ang istante ng chips</string>
+  <string name="revanced_hide_chips_shelf_summary_off">Ipinapakita ang istante ng chips</string>
   <string name="revanced_hide_expandable_chip_title">Itago ang napapalawak na chip sa ilalim ng mga video</string>
   <string name="revanced_hide_expandable_chip_summary_on">Nakatago ang mga napapalawak na chip</string>
   <string name="revanced_hide_expandable_chip_summary_off">Ipinapakita ang mga napapalawak na chip</string>
@@ -194,9 +197,6 @@ This is because Crowdin requires temporarily flattening this file and removing t
   <string name="revanced_hide_artist_cards_title">Itago ang mga card ng artist</string>
   <string name="revanced_hide_artist_cards_summary_on">Nakatago ang mga artist card</string>
   <string name="revanced_hide_artist_cards_summary_off">Ipinapakita ang mga card ng artist</string>
-  <string name="revanced_hide_chips_shelf_title">Itago ang shelf ng chips</string>
-  <string name="revanced_hide_chips_shelf_summary_on">Nakatago ang istante ng chips</string>
-  <string name="revanced_hide_chips_shelf_summary_off">Ipinapakita ang istante ng chips</string>
   <string name="revanced_hide_attributes_section_title">Itago ang seksyon ng mga katangian</string>
   <string name="revanced_hide_attributes_section_summary_on">Ang \"Mga itinatampok na lugar\", Mga seksyon ng Laro at Musika ay nakatago</string>
   <string name="revanced_hide_attributes_section_summary_off">Ipinapakita ang \"Mga itinatampok na lugar\", Mga seksyon ng Laro at Musika</string>
@@ -600,9 +600,6 @@ This is because Crowdin requires temporarily flattening this file and removing t
   <string name="revanced_hide_shorts_location_label_title">Itago ang label ng lokasyon</string>
   <string name="revanced_hide_shorts_location_label_summary_on">Nakatago ang label ng lokasyon</string>
   <string name="revanced_hide_shorts_location_label_summary_off">Ipinapakita ang label ng lokasyon</string>
-  <string name="revanced_hide_shorts_save_sound_button_title">Itago ang save sound to playlist button</string>
-  <string name="revanced_hide_shorts_save_sound_button_summary_on">Nakatago ang pag-save ng tunog sa playlist</string>
-  <string name="revanced_hide_shorts_save_sound_button_summary_off">Ang pag-save ng tunog sa playlist ay ipinapakita</string>
   <string name="revanced_hide_shorts_search_suggestions_title">Itago ang mga mungkahi sa paghahanap</string>
   <string name="revanced_hide_shorts_search_suggestions_summary_on">Nakatago ang mga mungkahi sa paghahanap</string>
   <string name="revanced_hide_shorts_search_suggestions_summary_off">Ipinapakita ang mga mungkahi sa paghahanap</string>
@@ -1081,17 +1078,8 @@ This is because Crowdin requires temporarily flattening this file and removing t
   <string name="revanced_slide_to_seek_summary_on">Naka-enable ang slide to seek</string>
   <string name="revanced_slide_to_seek_summary_off">Hindi pinagana ang slide to seek</string>
   </patch>
-  <patch id="misc.fix.playback.SpoofClientPatch">
-  <string name="revanced_spoof_client_screen_summary">Panggagaya ang kliyente upang maiwasan ang mga isyu sa pag-playback</string>
-  <string name="revanced_spoof_client_summary_on">Na-spoof ang kliyente</string>
-  <string name="revanced_spoof_client_summary_off">Hindi na-spoof ang kliyente\n\nMaaaring hindi gumana ang pag-playback ng video</string>
-  <string name="revanced_spoof_client_user_dialog_message">Ang pag-off sa setting na ito ay maaaring magdulot ng mga isyu sa pag-playback ng video.</string>
-  <string name="revanced_spoof_client_about_android_vr_summary">• Walang HDR na video\n• Hindi nagpe-playback ang mga pambata na video\n• Ang mga naka-pause na video ay maaaring random na ipagpatuloy\n• Mga thumbnail ng shorts seekbar na may mababang kalidad\n• I-download ang action button ay laging nakatago\n• Palaging nakatago ang mga end screen card</string>
-  <string name="revanced_spoof_client_storyboard_timeout">Hindi available ang mga thumbnail ng spoof client (nag-time out ang API)</string>
-  <string name="revanced_spoof_client_storyboard_io_exception">Pansamantalang hindi available ang mga thumbnail ng spoof client: %s</string>
-  </patch>
-  <!-- This patch is no longer used, these strings are not in use, and these strings will be deleted in the future. -->
-  <patch id="misc.fix.playback.SpoofSignaturePatch">
+  <patch id="misc.fix.playback.SpoofVideoStreamsPatch">
+  <string name="revanced_spoof_video_streams_user_dialog_message">Ang pag-off sa setting na ito ay maaaring magdulot ng mga isyu sa pag-playback ng video.</string>
   </patch>
   <!-- This patch is no longer used and these strings will soon be deleted. -->
   <patch id="video.hdrbrightness.HDRBrightnessPatch">
